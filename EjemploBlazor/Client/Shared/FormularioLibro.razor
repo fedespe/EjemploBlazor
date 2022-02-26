@@ -1,0 +1,66 @@
+﻿@using Models
+@inject HttpClient cliente
+@inject NavigationManager navigate
+
+<EditForm Model="@libro" OnValidSubmit="@GuardarLibro">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <label>Id: </label>
+    <InputNumber @bind-Value="libro.Id" readonly/>
+
+    <label>Titulo: </label>
+    <InputText @bind-Value="libro.Titulo"/>
+
+    <label>Fecha: </label>
+    <InputDate @bind-Value="libro.Fecha"/>
+
+    <label>Autor: </label>
+    <InputSelect @bind-Value="libro.IdAutor">
+        <option value="">--Seleccione--</option>
+        @foreach (var a in listaAutor)
+        {
+            <option value="@a.Id">@a.Nombre</option>
+        }
+    </InputSelect>
+
+    <button 
+        type="submit" 
+        @onclick="@(() => informacionLibro.InvokeAsync(libro))"
+    >
+            Guardar
+    </button>
+</EditForm>
+<p>@res</p>
+
+@code {
+    //Importante los get y set para los parametros
+    [Parameter]
+    public LibroVM libro { get; set; } = new LibroVM
+        {
+            Id=0,
+            Fecha = DateTime.Now,
+            Autor =new AutorVM()
+        };
+    [Parameter]
+    public List<AutorVM> listaAutor { get; set; } = new List<AutorVM>();
+
+    private string res = "";
+
+    private void GuardarLibro()
+    {
+        libro.Autor.Id = libro.IdAutor;//Para que funcione el Dataannotation
+        res = "Guardado";
+    }
+
+    //Para guardar en la base de datos
+    //public async Task GuardarLibro()
+    //{
+    //    cliente.PostAsJsonAsync<LibroVM>("api/crarLibro", libro);
+    //}
+
+    //Emitir evento 
+    [Parameter] 
+    public EventCallback<LibroVM> informacionLibro { get; set; }
+
+}

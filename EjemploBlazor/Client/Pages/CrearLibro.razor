@@ -1,0 +1,53 @@
+﻿@page "/crearLibro"
+@using Models
+@inject HttpClient Http
+
+<h1>Crear Libro</h1>
+
+<EditForm Model="@libro" OnValidSubmit="@GuardarLibro">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <label>Id: </label>
+    <InputNumber @bind-Value="libro.Id" readonly/>
+
+    <label>Titulo: </label>
+    <InputText @bind-Value="libro.Titulo"/>
+
+    <label>Fecha: </label>
+    <InputDate @bind-Value="libro.Fecha"/>
+
+    <label>Autor: </label>
+    <InputSelect @bind-Value="libro.Autor.Id">
+
+        @foreach (var a in listaAutor)
+        {
+            <option value="@a.Id">@a.Nombre</option>
+        }
+    </InputSelect>
+
+    <button type="submit">Guardar</button>
+</EditForm>
+<p>@res</p>
+
+@code {
+    private LibroVM libro = new LibroVM
+        {
+            Id=0,
+            Fecha = DateTime.Now,
+            Autor =new AutorVM()
+        };
+    private List<AutorVM> listaAutor = new List<AutorVM>();
+    //Al iniciar
+    protected override async Task OnInitializedAsync()
+    {
+        listaAutor = await Http.GetFromJsonAsync<List<AutorVM>>("api/Servicio/obtenerAutores");
+    }
+
+    private string res = "";
+
+    private void GuardarLibro()
+    {
+        res = "Guardado";
+    }
+}

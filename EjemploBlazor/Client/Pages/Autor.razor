@@ -1,0 +1,27 @@
+﻿@page "/autor"
+@using Models
+@inject HttpClient Http
+
+<h3>Autor</h3>
+@if (autores!.Count()>0)
+{
+    <ul class="list-group">
+        @foreach(AutorVM a in autores)
+        {
+            <li class="list-group-item">@a.Nombre</li>
+        }
+    </ul>
+}
+else{<p>Cargando...</p>}
+
+
+@code {
+    private List<AutorVM> autores = new List<AutorVM>();
+    protected override async Task OnInitializedAsync()
+    {
+        //autores = datos();
+        autores = await Http.GetFromJsonAsync<List<AutorVM>>("Autor");
+
+    }
+
+}
