@@ -1,0 +1,24 @@
+﻿
+
+@if (books == null)
+    {
+    <p>loaging...</p>
+    }
+else
+    {
+        <RadzenDataGrid AllowFiltering="true" AllowColumnResize="true" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="5" AllowPaging="true" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true"
+            Data="@books" TItem="Book" ColumnWidth="300px" LogicalFilterOperator="LogicalFilterOperator.Or">
+            <Columns>
+                <RadzenDataGridColumn TItem="Book" Property="BookId" Title="ID" Width="70px"/>
+                <RadzenDataGridColumn TItem="Book" Property="Title" Title="Title" Width="140px" />
+                <RadzenDataGridColumn TItem="Book" Property="Author" Title="Author" Width="140px"/>
+            </Columns>
+        </RadzenDataGrid>
+    }
+    
+
+@code {
+    [Parameter]
+    public IEnumerable<Book> books { get; set; }
+
+}

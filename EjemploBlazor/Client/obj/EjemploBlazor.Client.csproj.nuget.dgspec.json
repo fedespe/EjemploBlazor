@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Documentos Programacion\\GIT\\EjemploBlazor\\Client\\EjemploBlazor.Client.csproj": {}
+    "E:\\Documentos Programacion\\GIT\\EjerciciosBlazor\\EjemploBlazor\\EjemploBlazor\\Client\\EjemploBlazor.Client.csproj": {}
   },
   "projects": {
-    "E:\\Documentos Programacion\\GIT\\EjemploBlazor\\Client\\EjemploBlazor.Client.csproj": {
+    "E:\\Documentos Programacion\\GIT\\EjerciciosBlazor\\EjemploBlazor\\EjemploBlazor\\Client\\EjemploBlazor.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Documentos Programacion\\GIT\\EjemploBlazor\\Client\\EjemploBlazor.Client.csproj",
+        "projectUniqueName": "E:\\Documentos Programacion\\GIT\\EjerciciosBlazor\\EjemploBlazor\\EjemploBlazor\\Client\\EjemploBlazor.Client.csproj",
         "projectName": "EjemploBlazor.Client",
-        "projectPath": "E:\\Documentos Programacion\\GIT\\EjemploBlazor\\Client\\EjemploBlazor.Client.csproj",
+        "projectPath": "E:\\Documentos Programacion\\GIT\\EjerciciosBlazor\\EjemploBlazor\\EjemploBlazor\\Client\\EjemploBlazor.Client.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "E:\\Documentos Programacion\\GIT\\EjemploBlazor\\Client\\obj\\",
+        "outputPath": "E:\\Documentos Programacion\\GIT\\EjerciciosBlazor\\EjemploBlazor\\EjemploBlazor\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Programas\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Documentos Programacion\\GIT\\EjemploBlazor\\Shared\\EjemploBlazor.Shared.csproj": {
-                "projectPath": "E:\\Documentos Programacion\\GIT\\EjemploBlazor\\Shared\\EjemploBlazor.Shared.csproj"
+              "E:\\Documentos Programacion\\GIT\\EjerciciosBlazor\\EjemploBlazor\\EjemploBlazor\\Shared\\EjemploBlazor.Shared.csproj": {
+                "projectPath": "E:\\Documentos Programacion\\GIT\\EjerciciosBlazor\\EjemploBlazor\\EjemploBlazor\\Shared\\EjemploBlazor.Shared.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "E:\\Documentos Programacion\\GIT\\EjemploBlazor\\Shared\\EjemploBlazor.Shared.csproj": {
+    "E:\\Documentos Programacion\\GIT\\EjerciciosBlazor\\EjemploBlazor\\EjemploBlazor\\Shared\\EjemploBlazor.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Documentos Programacion\\GIT\\EjemploBlazor\\Shared\\EjemploBlazor.Shared.csproj",
+        "projectUniqueName": "E:\\Documentos Programacion\\GIT\\EjerciciosBlazor\\EjemploBlazor\\EjemploBlazor\\Shared\\EjemploBlazor.Shared.csproj",
         "projectName": "EjemploBlazor.Shared",
-        "projectPath": "E:\\Documentos Programacion\\GIT\\EjemploBlazor\\Shared\\EjemploBlazor.Shared.csproj",
+        "projectPath": "E:\\Documentos Programacion\\GIT\\EjerciciosBlazor\\EjemploBlazor\\EjemploBlazor\\Shared\\EjemploBlazor.Shared.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "E:\\Documentos Programacion\\GIT\\EjemploBlazor\\Shared\\obj\\",
+        "outputPath": "E:\\Documentos Programacion\\GIT\\EjerciciosBlazor\\EjemploBlazor\\EjemploBlazor\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Programas\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,76 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CRUDCodeFirstEF
+build_property.RootNamespace = CRUDCodeFirstEF
+build_property.ProjectDir = E:\Documentos Programacion\GIT\EjerciciosBlazor\CRUDCodeFirstEF\CRUDCodeFirstEF\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Documentos Programacion\GIT\EjerciciosBlazor\CRUDCodeFirstEF\CRUDCodeFirstEF
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Pages/Book/BookForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1xCb29rRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Pages/Book/BooksList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1xCb29rc0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Pages/Book/CreateBook.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1xDcmVhdGVCb29rLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Pages/Book/CrudLibros.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1xDcnVkTGlicm9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-lydmiwpee7
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-qrxqtgyljk
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/CRUDCodeFirstEF/CRUDCodeFirstEF/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

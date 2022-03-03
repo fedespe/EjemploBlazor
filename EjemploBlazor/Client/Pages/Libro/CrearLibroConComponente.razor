@@ -4,18 +4,18 @@
 
 <h1>Crear Libro con Componente</h1>
 
-<FormularioLibro libro=libro listaAutor=listaAutores informacionLibro=obtenerInfoLibro/>
+<FormularioLibro listaAutor=listaAutores informacionLibro=obtenerInfoLibro/>
 
 <p>@libroInfo.Titulo</p>
 
 
 @code {
-    public LibroVM libro= new LibroVM
-        {
-            Id=0,
-            Fecha = DateTime.Now,
-            Autor =new AutorVM()
-        };
+    //public LibroVM libro= new LibroVM
+    //    {
+    //        Id=0,
+    //        Fecha = DateTime.Now,
+    //        Autor =new AutorVM()
+    //    };
     public List<AutorVM> listaAutores = new List<AutorVM>();
 
     protected override async Task OnInitializedAsync()

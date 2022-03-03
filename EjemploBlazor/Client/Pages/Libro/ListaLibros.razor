@@ -1,0 +1,50 @@
+﻿@page "/listaLibros"
+
+@using Models
+@inject HttpClient Http
+
+<h3>Libros <a href="/crearLibroConComponente">Crear</a></h3>
+
+@if (libros!.Count()>0)
+{
+    <table>    
+        @foreach(LibroVM a in libros)
+        {
+            <tr>
+                <td>@a.Titulo</td>
+                <td>
+                    <a href="/EditarLibro/@a.Id">Edit</a>
+                </td>
+                <td>
+                    <a href="/EliminarLibro/@a.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+}
+else{<p>Cargando...</p>}
+
+
+
+@*@if (libros!.Count()>0)
+{
+    <ul class="list-group">
+        @foreach(LibroVM a in libros)
+        {
+            <li class="list-group-item">@a.Titulo</li>
+            <li class="list-group-item">Edit</li>
+            <li class="list-group-item">Delete</li>
+        }
+    </ul>
+}
+else{<p>Cargando...</p>}*@
+
+
+@code {
+    private List<LibroVM> libros = new List<LibroVM>();
+    protected override async Task OnInitializedAsync()
+    {
+        libros = await Http.GetFromJsonAsync<List<LibroVM>>("api/Servicio/obtenerLibros");
+    }
+
+}

@@ -7,9 +7,16 @@ namespace EjemploBlazor.Server.Controllers
     public class LibroController : Controller
     {
         [HttpGet, Route("api/Servicio/obtenerLibros")]
-        public List<Libro> Get()
+        public List<Libro> obtenerLibros()
         {
             return datos();
+        }
+
+        [HttpPost] 
+        [Route("api/Servicio/guardarLibro")]
+        public string guardarLibro(Libro l)
+        {
+            return "Se ha guardado el libro: "+l.Titulo + "id: " + l.Id;
         }
 
         private List<Libro> datos()

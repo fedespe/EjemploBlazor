@@ -10,3 +10,15 @@ E:\Documentos Programacion\GIT\Blazor_Ejemplo\Ejemplo_Blazor\Frontend\EjemploBla
 E:\Documentos Programacion\GIT\Blazor_Ejemplo\Ejemplo_Blazor\Frontend\EjemploBlazor\Shared\obj\Debug\net6.0\EjemploBlazor.Shared.dll
 E:\Documentos Programacion\GIT\Blazor_Ejemplo\Ejemplo_Blazor\Frontend\EjemploBlazor\Shared\obj\Debug\net6.0\ref\EjemploBlazor.Shared.dll
 E:\Documentos Programacion\GIT\Blazor_Ejemplo\Ejemplo_Blazor\Frontend\EjemploBlazor\Shared\obj\Debug\net6.0\EjemploBlazor.Shared.pdb
+E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Shared\bin\Debug\net6.0\EjemploBlazor.Shared.deps.json
+E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Shared\bin\Debug\net6.0\EjemploBlazor.Shared.dll
+E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Shared\bin\Debug\net6.0\ref\EjemploBlazor.Shared.dll
+E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Shared\bin\Debug\net6.0\EjemploBlazor.Shared.pdb
+E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Shared\obj\Debug\net6.0\EjemploBlazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Shared\obj\Debug\net6.0\EjemploBlazor.Shared.AssemblyInfoInputs.cache
+E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Shared\obj\Debug\net6.0\EjemploBlazor.Shared.AssemblyInfo.cs
+E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Shared\obj\Debug\net6.0\EjemploBlazor.Shared.csproj.CoreCompileInputs.cache
+E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Shared\obj\Debug\net6.0\EjemploBlazor.Shared.dll
+E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Shared\obj\Debug\net6.0\ref\EjemploBlazor.Shared.dll
+E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Shared\obj\Debug\net6.0\EjemploBlazor.Shared.pdb
+E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Shared\obj\Debug\net6.0\EjemploBlazor.Shared.csproj.AssemblyReference.cache

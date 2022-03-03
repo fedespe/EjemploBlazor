@@ -1,0 +1,13 @@
+﻿@page "/pruebaServicio"
+@inject HttpClient Http
+
+<h3>PruebaServicio</h3>
+
+@code {
+    public List<Models.Prueba> pruebas = new List<Models.Prueba>();
+    
+    protected override async Task OnInitializedAsync()
+    {
+        pruebas = await Http.GetFromJsonAsync<List<Models.Prueba>>("https://jsonplaceholder.typicode.com/posts");     
+    }
+}

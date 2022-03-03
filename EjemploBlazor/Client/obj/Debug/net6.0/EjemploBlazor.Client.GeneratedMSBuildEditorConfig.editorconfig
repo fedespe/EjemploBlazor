@@ -11,61 +11,69 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = EjemploBlazor.Client
 build_property.RootNamespace = EjemploBlazor.Client
-build_property.ProjectDir = E:\Documentos Programacion\GIT\EjemploBlazor\Client\
+build_property.ProjectDir = E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Client\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Documentos Programacion\GIT\EjemploBlazor\Client
+build_property.MSBuildProjectDirectory = E:\Documentos Programacion\GIT\EjerciciosBlazor\EjemploBlazor\EjemploBlazor\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/App.razor]
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/Pages/Autor.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0b3IucmF6b3I=
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Pages/Autor/Autor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0b3JcQXV0b3IucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/Pages/Counter.razor]
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/Pages/CrearLibro.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXJMaWJyby5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/Pages/CrearLibroConComponente.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXJMaWJyb0NvbkNvbXBvbmVudGUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/Pages/EditarLibroConComponente.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdGFyTGlicm9Db25Db21wb25lbnRlLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/Pages/FetchData.razor]
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/Pages/Index.razor]
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/Shared/FormularioLibro.razor]
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Pages/Libro/CrearLibro.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicm9cQ3JlYXJMaWJyby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Pages/Libro/CrearLibroConComponente.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicm9cQ3JlYXJMaWJyb0NvbkNvbXBvbmVudGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Pages/Libro/EditarLibroConComponente.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicm9cRWRpdGFyTGlicm9Db25Db21wb25lbnRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Pages/Libro/ListaLibros.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicm9cTGlzdGFMaWJyb3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Pages/PruebaServicio/PruebaServicio.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJ1ZWJhU2VydmljaW9cUHJ1ZWJhU2VydmljaW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Shared/FormularioLibro.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEZvcm11bGFyaW9MaWJyby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/Shared/SurveyPrompt.razor]
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/_Imports.razor]
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/Shared/MainLayout.razor]
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ggv2f0s9x6
 
-[E:/Documentos Programacion/GIT/EjemploBlazor/Client/Shared/NavMenu.razor]
+[E:/Documentos Programacion/GIT/EjerciciosBlazor/EjemploBlazor/EjemploBlazor/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-otdiznvd3o

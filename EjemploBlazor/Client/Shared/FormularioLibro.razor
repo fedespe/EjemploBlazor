@@ -2,21 +2,22 @@
 @inject HttpClient cliente
 @inject NavigationManager navigate
 
-<EditForm Model="@libro" OnValidSubmit="@GuardarLibro">
+
+<EditForm Model="@libroVM" OnValidSubmit="@GuardarLibro">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
     <label>Id: </label>
-    <InputNumber @bind-Value="libro.Id" readonly/>
+    <InputNumber @bind-Value="libroVM.Id" readonly/>
 
     <label>Titulo: </label>
-    <InputText @bind-Value="libro.Titulo"/>
+    <InputText @bind-Value="libroVM.Titulo"/>
 
     <label>Fecha: </label>
-    <InputDate @bind-Value="libro.Fecha"/>
+    <InputDate @bind-Value="libroVM.Fecha"/>
 
     <label>Autor: </label>
-    <InputSelect @bind-Value="libro.IdAutor">
+    <InputSelect @bind-Value="libroVM.IdAutor">
         <option value="">--Seleccione--</option>
         @foreach (var a in listaAutor)
         {
@@ -26,7 +27,7 @@
 
     <button 
         type="submit" 
-        @onclick="@(() => informacionLibro.InvokeAsync(libro))"
+        @onclick="@(() => informacionLibro.InvokeAsync(libroVM))"
     >
             Guardar
     </button>
@@ -36,31 +37,57 @@
 @code {
     //Importante los get y set para los parametros
     [Parameter]
-    public LibroVM libro { get; set; } = new LibroVM
+    public LibroVM libroVM { get; set; } = new LibroVM
         {
             Id=0,
             Fecha = DateTime.Now,
             Autor =new AutorVM()
         };
+
     [Parameter]
     public List<AutorVM> listaAutor { get; set; } = new List<AutorVM>();
-
-    private string res = "";
-
-    private void GuardarLibro()
-    {
-        libro.Autor.Id = libro.IdAutor;//Para que funcione el Dataannotation
-        res = "Guardado";
-    }
-
-    //Para guardar en la base de datos
-    //public async Task GuardarLibro()
-    //{
-    //    cliente.PostAsJsonAsync<LibroVM>("api/crarLibro", libro);
-    //}
 
     //Emitir evento 
     [Parameter] 
     public EventCallback<LibroVM> informacionLibro { get; set; }
+
+    private string res = "";
+
+    private async Task GuardarLibro()
+    {
+        libroVM.Autor.Id = libroVM.IdAutor;//Para que funcione el Dataannotation
+        Libro unLibro = new Libro
+            {
+                Id = libroVM.Id,
+                Titulo = libroVM.Titulo,
+                Fecha=libroVM.Fecha,
+                Autor = new Autor
+                {
+                    Id = libroVM.IdAutor,   
+                    Nombre= "autor fijo",
+                }
+                
+            };
+        var resultado = await cliente.PostAsJsonAsync("api/Servicio/guardarLibro",unLibro);
+        //var m=resultado.EnsureSuccessStatusCode();
+
+        // Deserialize mensaje from the response body.
+        res = await resultado.Content.ReadAsStringAsync();
+
+        //Ejemplo
+        //static async Task<Product> UpdateProductAsync(Product product)
+        //{
+        //    HttpResponseMessage response = await client.PutAsJsonAsync(
+        //        $"api/products/{product.Id}", product);
+        //    response.EnsureSuccessStatusCode();
+
+        //    // Deserialize the updated product from the response body.
+        //    product = await response.Content.ReadAsAsync<Product>();
+        //    return product;
+        //}
+        
+    }
+
+    
 
 }

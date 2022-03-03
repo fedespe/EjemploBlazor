@@ -1,0 +1,128 @@
+﻿@inject IBookService client;
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <RadzenCard Class="mb-2 d-flex flex-row" >
+                <RadzenCheckBox @bind-Value=@popup Name="popup"></RadzenCheckBox>
+                <RadzenLabel class="ms-2" Text="Display validators as popup" For="popup"/>
+            </RadzenCard>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <RadzenTemplateForm TItem="Book" Data=@oBook Submit=@OnSubmit InvalidSubmit=@OnInvalidSubmit>
+                <RadzenFieldset Text="Book information">
+                    <div class="row mb-5">
+                        <div class="col-md-4">
+                            <RadzenLabel Text="Book Id" />
+                            <small style="display: block">(3-10 characters)</small>
+                        </div>
+                        <div class="col">
+                            <RadzenNumeric style="display: block" Name="BookId" @bind-Value=@oBook.BookId Class="w-100" />                            
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-4">
+                            <RadzenLabel Text="Title" />
+                            <small style="display: block">(3-10 characters)</small>
+                        </div>
+                        <div class="col">
+                            <RadzenTextBox style="display: block" Name="Title" @bind-Value=@oBook.Title Class="w-100" />
+                            <RadzenLengthValidator Component="Title" Min="3" Text="Title should be at least 3 characters" Popup=@popup Style="position: absolute" />
+                            <RadzenLengthValidator Component="Title"  Max="10" Text="Title should be at most 10 characters" Popup=@popup Style="position: absolute" />
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-4">
+                            <RadzenLabel Text="Author" />
+                            <small style="display: block">(3-10 characters)</small>
+                        </div>
+                        <div class="col">
+@*                            <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" 
+                            Data=@(autores.Select(c => c.Name).Distinct())
+                            Change=@(args => DropDownOnChange(args, "DropDown")) />*@
+
+                            <RadzenDropDown TValue="string" Data=@autores TextProperty="Name" Placeholder="Select..."
+                                ValueProperty="Name" Change="@DropDownOnChange" Class="w-100"/>
+
+                            @*<RadzenTextBox style="display: block" Name="Author" @bind-Value=@oBook.Author Class="w-100" />
+                            <RadzenLengthValidator Component="Author" Min="3" Text="Author should be at least 3 characters" Popup=@popup Style="position: absolute" />
+                            <RadzenLengthValidator Component="Author"  Max="10" Text="Author should be at most 10 characters" Popup=@popup Style="position: absolute" />*@
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a @onclick="@OnClick">
+                            <RadzenButton ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Primary" Text="Submit"></RadzenButton>                       
+                        </a>
+                    </div>                   
+                </RadzenFieldset>
+            </RadzenTemplateForm>
+        </div>
+    </div>
+</div>
+<p>@res</p>
+
+@code {
+    [Parameter]
+    public Book oBook { get; set; } = new Book{BookId=0};
+    public bool res;
+    public List<Author> autores = new List<Author>();
+
+    //Para avisar que se guardo correctamente
+    [Parameter] 
+    public EventCallback<bool> Refresh { get; set; }  
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (oBook.BookId > 0)
+            await client.GetBookDetail(oBook.BookId);
+
+        autores.Add(new Author
+            {
+                Id=1,
+                Name="Autor 1"
+            });
+        autores.Add(new Author
+        {
+            Id=2,
+            Name="Autor 2"
+        });
+        autores.Add(new Author
+        {
+            Id=3,
+            Name="Autor 3"
+        });
+    }
+
+    public async Task  OnSubmit(Book model)
+    {
+        res = await client.SaveBook(model);
+        if (res)
+            await OnClick();         
+    }
+    public async Task  OnClick()
+    {
+        await Refresh.InvokeAsync(true);     
+    }
+    void OnInvalidSubmit(FormInvalidSubmitEventArgs args)
+    {
+        //console.Log($"InvalidSubmit: {JsonSerializer.Serialize(args, new JsonSerializerOptions() {  WriteIndented = true })}");
+    }
+
+    void Cancel()
+    {
+    //
+    }
+    //void DropDownOnChange(Object value, string name)
+    //{
+    //    oBook.Author = (string)value;
+    //    //oBook.Author = ((Author)value).Name;
+    //}
+    void DropDownOnChange(Object value)
+    {
+        oBook.Author = (string)value;     
+    }
+    bool popup;
+
+}

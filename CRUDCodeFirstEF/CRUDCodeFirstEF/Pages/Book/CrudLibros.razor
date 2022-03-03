@@ -1,0 +1,44 @@
+﻿@page "/crudBooks"
+@inject IBookService client
+
+<div class="container">
+
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="h3 d-flex justify-content-center">Book List</div>
+            <BooksList books=@books></BooksList>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="h3 d-flex justify-content-center">Create Book</div>
+            <BookForm Refresh="ClickCallback"></BookForm>
+            @*<BookForm></BookForm>*@  
+            <p>@mCreate</p>
+        </div>
+        <div class="col-6">
+            <div class="h3 d-flex justify-content-center">Edit Book</div>
+            <BookForm></BookForm>
+        </div>
+    </div> 
+
+</div>
+@code {
+    public IEnumerable<Book> books = new List<Book>();
+    public string mCreate = "";
+
+    public async Task ClickCallback(bool refresh)
+    {
+        if (refresh)
+        {
+            mCreate="Book add.";
+            await OnInitializedAsync();
+        }
+        
+    }
+    protected async override Task OnInitializedAsync()
+    {
+        books = await client.GetAllBooks();
+    }
+}
